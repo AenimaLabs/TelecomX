@@ -1,0 +1,152 @@
+# ================================================
+# REQUIREMENTS.TXT - Proyecto Análisis de Churn TelecomX
+# ================================================
+# Autor: AenimaLabs
+# Descripción: Dependencias necesarias para el análisis de churn
+# Python Version: 3.8+
+# Fecha: Agosto 2025
+
+# ================================================
+# CORE DATA SCIENCE LIBRARIES
+# ================================================
+
+# Manipulación y análisis de datos
+pandas>=1.5.0
+numpy>=1.21.0
+scipy>=1.9.0
+
+# ================================================
+# VISUALIZATION LIBRARIES
+# ================================================
+
+# Visualización estática
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Visualización interactiva (opcional)
+plotly>=5.15.0
+plotly-express>=0.4.1
+
+# ================================================
+# JUPYTER ECOSYSTEM
+# ================================================
+
+# Notebook environment
+jupyter>=1.0.0
+notebook>=6.4.12
+ipykernel>=6.15.0
+ipywidgets>=8.0.0
+
+# Jupyter extensions para mejor experiencia
+jupyterlab>=3.4.0
+
+# ================================================
+# HTTP & DATA FETCHING
+# ================================================
+
+# Para descarga de datos desde APIs/URLs
+requests>=2.28.0
+urllib3>=1.26.0
+
+# ================================================
+# STATISTICAL ANALYSIS
+# ================================================
+
+# Análisis estadístico avanzado
+statsmodels>=0.13.0
+scikit-learn>=1.1.0
+
+# ================================================
+# UTILITIES & HELPERS
+# ================================================
+
+# Manejo de fechas y tiempo
+python-dateutil>=2.8.2
+
+# Progress bars para loops largos
+tqdm>=4.64.0
+
+# Configuración y manejo de archivos
+pyyaml>=6.0
+python-dotenv>=0.20.0
+
+# ================================================
+# DEVELOPMENT & TESTING (OPTIONAL)
+# ================================================
+
+# Code quality
+black>=22.6.0
+flake8>=5.0.0
+isort>=5.10.0
+
+# Testing framework
+pytest>=7.1.0
+pytest-cov>=3.0.0
+
+# ================================================
+# SPECIFIC VERSIONS FOR COMPATIBILITY
+# ================================================
+
+# Core dependencies with specific versions
+# (Para evitar conflictos en diferentes entornos)
+pytz>=2022.1
+six>=1.16.0
+packaging>=21.3
+
+# ================================================
+# MEMORY & PERFORMANCE
+# ================================================
+
+# Para datasets grandes (opcional)
+dask>=2022.7.0
+numba>=0.56.0
+
+# ================================================
+# EXPORT & REPORTING
+# ================================================
+
+# Para exportar reportes
+openpyxl>=3.0.10  # Excel export
+fpdf2>=2.5.7      # PDF generation
+
+# ================================================
+# COMPATIBILITY NOTES
+# ================================================
+
+# IMPORTANTE:
+# - Estas versiones han sido testadas con Python 3.8+
+# - Para Python 3.7, reducir versiones de pandas/numpy
+# - Para ambientes con GPU, considerar cupy en lugar de numpy
+# - En sistemas ARM (Apple M1/M2), algunas librerías pueden requerir versiones específicas
+
+# ================================================
+# INSTALACIÓN RÁPIDA
+# ================================================
+
+# Para instalar solo las dependencias esenciales:
+# pip install pandas matplotlib seaborn jupyter requests
+
+# Para instalación completa:
+# pip install -r requirements.txt
+
+# Para desarrollo:
+# pip install -r requirements.txt
+# pip install black flake8 pytest
+
+# ================================================
+# TROUBLESHOOTING
+# ================================================
+
+# Si hay conflictos con matplotlib en macOS:
+# - Usar: pip install --upgrade matplotlib
+# - O: conda install matplotlib
+
+# Si hay problemas con Jupyter:
+# - jupyter notebook --generate-config
+# - jupyter lab build
+
+# Para entornos virtuales:
+# python -m venv venv
+# source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate     # Windows
+# pip install -r requirements.txt
